@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="javascript/javascript.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+<body>
+        <!-- intro screen -->
+    <div id="introScreen"> 
+        <article>
+            <section id="starters">
+                <img id="squirtle" src="img/pokeball.png" alt="8bit sprite of a pokeball">
+                <img id="charmander" src="img/pokeball.png" alt="8bit sprite of a pokeball">
+                <img id="bulbasaur" src="img/pokeball.png" alt="8bit sprite of a pokeball">
+            </section>
+            <section id="pokeballHeader">
+                <h2 class="typewriter" id="headerChoose">Choose your Pokémon!</h2>
+            </section>
+        </article>
+    </div>
+    <div id="gameoverScreen"> 
+        <div id="containerTypewriter">
+            <h1 class="typewriter">Game Over</h1>
+        </div
+        <h2 id="gameoverMessage"></h2>
+        <h2>Play Again?</h2>
+        <section id="containerQuestion">
+            <button id="buttonYes">Yes</button>
+            <button id="buttonNo">No</button>
+        </section>
+    </div>
+
+    <div id="battleScreen">
+        <div id="background">
+            <article id="p2Pkmn">
+                <section id="infoPkmn">
+                    <h3 id="p2Name">pkmn naam</h3>
+                    <section id="healthBar">
+                        <section id="p2HealthAmount"></section>
+                    </section>
+                </section>
+                <section id="sprite">
+                    <img id="p2Sprite" src="" alt="sprite of player 2's pokémon">
+                </section>
+            </article>
+
+            <article id="p1Pkmn">
+                <section id="sprite">
+                    <img id="p1Sprite" src="" alt="sprite of player 1's pokémon">
+                </section>
+                <section id="infoPkmn">
+                    <h3 id="p1Name">pkmn naam</h3>
+                    <section id="healthBar">
+                        <section id="p1HealthAmount"></section>
+                    </section>
+                </section>
+            </article>
+            <div id="battleLog"></div>
+        </div>
+            <article id="textBox">
+                <section id="text">
+                    <h2 id="textAttack">Attack</h2>
+                </section>
+                <section id="attacks">
+                </section>
+            </article>
+    </div>
+    <audio id="audio" muted loop>
+        <source src="audio/battleMusic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
+<!-- Nicha van Emmerik Koraal 23/04/2025 -->

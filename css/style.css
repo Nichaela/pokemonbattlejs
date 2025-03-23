@@ -1,0 +1,211 @@
+/* The typing effect by https://www.youtube.com/watch?v=yefgBA1CecI&ab_channel=CluelessExpert */
+@keyframes typing {
+    from { width: 0 }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes cursor {
+    /* from, to { border-color: transparent } */
+    50% { border-color: black }
+  }
+
+/* evolution effect chatGPT prompt: what can I add to make the evolution flashier? */
+@keyframes glow {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(2); }
+    100% { filter: brightness(1); }
+}
+
+/* chatGPT prompt: How to animate a shake effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake-effect {
+    animation: shake 0.5s ease-in-out;
+}
+
+.glow-effect {
+    animation: glow 3s ease-in-out;
+}
+
+.damage-effect {
+    background-color: red !important;
+}
+
+.typewriter {
+    width: 100%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(15),
+      cursor .4s step-end infinite alternate;
+}
+
+body {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-family: "Press Start 2P", system-ui;
+    /* https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg */
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* button reset */
+button { 
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
+}
+
+#battleScreen,
+#gameoverScreen {
+    display: none;
+}
+
+#battleScreen {
+    text-align: left;
+}
+
+#introScreen {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#background {
+    /* https://i.pinimg.com/originals/97/50/8f/97508f63790e74b828245e811e556495.gif */
+    background-image: url(../img/background.gif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pokeballHeader {
+    display: inline-block;
+}
+
+#sprite img {
+    width: 200px;
+}
+
+#starters img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* pokemon selection */
+#starters img:hover {
+    opacity: 0.7;
+}
+
+#squirtle:hover {
+    content: url(../img/squirtleSelected.gif); 
+}
+
+#charmander:hover {
+    content: url(../img/charmanderSelected.gif);
+}
+
+#bulbasaur:hover {
+    content: url(../img/bulbasaurSelected.gif);
+}
+
+#starters {
+    margin: auto;
+    display: flex;
+}
+
+#healthBar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#p1HealthAmount,
+#p2HealthAmount {
+    width: 0; 
+    height: 30px;
+    background-color: #04AA6D;
+}
+
+#infoPkmn {
+    border: #04AA6D solid 1px;
+    width: 45%;
+    padding: 25px;
+    background-color: white;
+}
+
+#p1Pkmn,
+#p2Pkmn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-inline: 150px;
+}
+
+#p2Pkmn {
+    padding-block: 100px;
+}
+
+#battleLog {
+    padding: 30px;
+    margin: 0;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textBox h2 {
+   padding: 100px;
+}
+
+#textAttack:hover,
+#textPotion:hover,
+#attacks h2:hover {
+    background-color: grey;
+    opacity: 0.5;
+}
+
+#textBox {
+    width: 100%;
+    height: 100%;
+    border: black solid 1px;
+}
+
+#gameoverScreen {
+    padding: 50px;
+}
+#containerQuestion {
+    display: flex;
+    justify-content: center;
+}
+#containerQuestion button {
+    padding: 20px;
+    margin: 20px;
+}
