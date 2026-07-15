@@ -1,6 +1,9 @@
 # Pokémon battle clone 
 Javascript practice for the project Inleiding Porgrammeren at Hogeschool van Amsterdam.
 
+## Demo gif
+<img width="426" height="240" alt="pkmnbattleclonedemo" src="https://github.com/user-attachments/assets/624108a9-d399-4819-a5dc-5980befdb3ed" />
+
 ## Screenshots
 <img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/90eb03c0-a665-4dac-bb33-89f4989d05a4" />
 <img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/4deec6e5-6892-48eb-b298-92e2dde0068d" />
