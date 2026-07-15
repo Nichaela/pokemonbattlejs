@@ -10,6 +10,7 @@ Javascript practice for the project Inleiding Porgrammeren at Hogeschool van Ams
 
 ## Credits
 gatekid3
+
 https://static.wikia.nocookie.net/pokemon/images/b/bc/0007Squirtle_Back_V.gif/revision/latest/smart/width/300/height/300?cb=20110523222342
 https://320ave.carrd.co/assets/images/gallery01/e90cccbb.gif?v12829326493651
 https://66.media.tumblr.com/tumblr_ma4fusgAB01rfjowdo1_500.gif
